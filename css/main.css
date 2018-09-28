@@ -157,7 +157,7 @@ body {
 
 @media(max-width: 1024px) {
     .site-section-inner {
-        padding: 0 20px
+        padding: 0
     }
 }
 
@@ -455,8 +455,7 @@ body {
 }
 
 .sub-heading {
-    border-bottom: 2px solid green;
-    display: inline-block
+    text-align: center;
 }
 
 .sub-heading-container {
@@ -822,5 +821,35 @@ th {
     .ph input,
     .message textarea {
         width: 100%
+    }
+}
+
+.site-section--our-partners {
+    background-color: #FFD03E;
+    padding: 50px 0;
+}
+
+.site-section--our-partners ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.site-section--our-partners ul li {
+    margin: 20px;
+}
+
+@media(max-width: 1024px) {
+    .site-section--our-partners ul {
+        flex-direction: column;
+        margin-top: 0;
+        align-items: center;
+    }
+
+    .site-section--our-partners ul li {
+        margin: 10px;
     }
 }
