@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background: #CFE0EC;
+    background: rgba(207, 224, 236, 0.75);
     z-index: 10
 }
 
@@ -171,34 +171,30 @@ body {
 .welcome-message-container {
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    max-width: 600px;
 }
 
-.welcome {
-    font-family: "Arimo", sans-serif;
-    border-radius: 25px;
+.welcome-message__heading {
+    font-size: 50px;
     text-align: center;
-    background-color: #ffc04c;
+}
+
+.welcome-message__sub-heading {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0 50px;
+}
+
+.welcome-message__button {
+    background-color: #FFD03E;
+    height: 50px;
+    width: 150px;
+    color: #333;
+    text-transform: uppercase;
+    border: 0 none;
+    font-size: 16px;
     font-weight: bold;
-    padding: 10px
-}
-
-.welcome-animated-content {
-    padding: 10px;
-    margin: 10px;
-    min-width: 250px;
-    text-align: center
-}
-
-.welcome-animated-text {
-    font-size: 20px;
-    color: #fff;
-    font-family: "IBM Plex Mono", monospace
-}
-
-.typed-cursor {
-    font-size: 20px;
-    color: #fff
 }
 
 .section-blog {
